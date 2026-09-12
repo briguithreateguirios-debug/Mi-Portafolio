@@ -315,7 +315,7 @@
     </section>
 
 
-    
+
     <!-- ================= PROYECTOS ================= -->
     <section class="section projects" id="proyectos">
 
@@ -454,123 +454,79 @@
     </section>
 
 
-    <!-- ================= CONTACTO ================= -->
-    <section class="section contact" id="contacto">
+    <!-- 04 / CONTACTO -->
+<section id="contacto" class="section">
+  <div class="container"> <!-- No olvides tu contenedor general -->
+    <div class="contact-grid">
+        
+        <!-- COLUMNA IZQUIERDA: Texto + Tarjetas -->
+        <div class="contact-info">
+            <div class="section-tag">04 / CONTACTO</div>
+            <h2>¿Creamos algo <br><em>juntos?</em></h2>
+            
+            <p class="contact-intro">
+                Si querés comunicarte conmigo, completá el formulario. La validación aparece mientras escribís para ayudarte a completar todos los campos correctamente.
+            </p>
 
-      <div class="container contact-grid">
+            <!-- Bloque de Tarjetas Verticales -->
+            <div class="contact-cards-container">
+                <!-- Tarjeta Email -->
+                <div class="contact-item-card">
+                    <div class="contact-card-icon">📧</div>
+                    <div class="contact-card-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:briguithreateguirios@gmail.com">briguithreateguirios@gmail.com</a></p>
+                    </div>
+                </div>
 
+                <!-- Tarjeta Teléfono -->
+                <div class="contact-item-card">
+                    <div class="contact-card-icon">📱</div>
+                    <div class="contact-card-text">
+                        <h3>Teléfono</h3>
+                        <p><a href="https://wa.me" target="_blank">+598 096 020 548</a></p>
+                    </div>
+                </div>
 
-        <!-- Texto -->
-        <div>
-
-          <p class="section-tag">
-            04 / CONTACTO
-          </p>
-
-          <h2>
-            ¿Creamos algo
-            <em>juntos?</em>
-          </h2>
-
-          <p class="contact-intro">
-            Si querés comunicarte conmigo, completá el formulario.
-            La validación aparece mientras escribís para ayudarte
-            a completar todos los campos correctamente.
-          </p>
-
+                <!-- Tarjeta Ubicación -->
+                <div class="contact-item-card">
+                    <div class="contact-card-icon">📍</div>
+                    <div class="contact-card-text">
+                        <h3>Ubicación</h3>
+                        <p>Paysandú, Uruguay</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- COLUMNA DERECHA: El Formulario en su propia caja -->
+        <form class="contact-form" id="form-contacto">
+            <div class="form-group" id="group-nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                <span class="error-message" id="error-nombre"></span>
+            </div>
 
-        <!-- Formulario -->
-        <form
-          class="contact-form"
-          id="contact-form"
-          novalidate
-        >
+            <div class="form-group" id="group-email">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com">
+                <span class="error-message" id="error-email"></span>
+            </div>
 
+            <div class="form-group" id="group-mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="error-message" id="error-mensaje"></span>
+            </div>
 
-          <!-- Nombre -->
-          <div class="form-group">
-
-            <label for="name">
-              Nombre
-            </label>
-
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Tu nombre"
-              autocomplete="name"
-            >
-
-            <small class="error-message"></small>
-
-          </div>
-
-
-          <!-- Email -->
-          <div class="form-group">
-
-            <label for="email">
-              Correo electrónico
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="tu@email.com"
-              autocomplete="email"
-            >
-
-            <small class="error-message"></small>
-
-          </div>
-
-
-          <!-- Mensaje -->
-          <div class="form-group">
-
-            <label for="message">
-              Mensaje
-            </label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Escribí tu mensaje..."
-            ></textarea>
-
-            <small class="error-message"></small>
-
-          </div>
-
-
-          <!-- Botón -->
-          <button
-            class="btn btn-primary submit-btn"
-            type="submit"
-          >
-            Enviar mensaje
-          </button>
-
-
-          <!-- Mensaje de JavaScript -->
-          <p
-            class="form-status"
-            id="form-status"
-            role="status"
-          ></p>
-
+            <button type="submit" class="submit-btn">Enviar mensaje</button>
+            <div class="form-status" id="form-status"></div>
         </form>
 
-      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
-
-  </main>
 
 
   <!-- ================= FOOTER ================= -->

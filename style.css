@@ -567,83 +567,6 @@ em {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 100px;
-  align-items: start;
-}
-
-.contact-intro {
-  max-width: 500px;
-  margin-top: 25px;
-
-  color: var(--text-soft);
-}
-
-.contact-form {
-  padding: 35px;
-
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.form-group {
-  margin-bottom: 22px;
-}
-
-.form-group label {
-  display: block;
-
-  margin-bottom: 8px;
-
-  color: var(--text-soft);
-  font-size: 0.85rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-
-  padding: 14px 16px;
-
-  border: 1px solid var(--border);
-  border-radius: 12px;
-
-  outline: none;
-
-  background: var(--bg);
-  color: var(--text);
-
-  resize: vertical;
-
-  transition: var(--transition);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--text-muted);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--accent);
-}
-
-.form-group.valid input,
-.form-group.valid textarea {
-  border-color: #718b7a;
-}
-
-.form-group.invalid input,
-.form-group.invalid textarea {
-  border-color: #9b6464;
-}
 
 .error-message {
   display: block;
@@ -669,6 +592,170 @@ em {
   font-size: 0.85rem;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-intro {
+  max-width: 500px;
+  margin-top: 25px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-intro {
+  max-width: 500px;
+  margin-top: 25px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+/* Contenedor de las tarjetas separado del texto superior */
+.contact-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 35px;
+  max-width: 450px;
+}
+
+/* Tarjetas individuales alineadas verticalmente a la izquierda */
+.contact-item-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-card-icon {
+  font-size: 1.4rem;
+}
+
+.contact-card-text h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-card-text p, 
+.contact-card-text a {
+  margin: 3px 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  text-decoration: none;
+}
+
+.contact-card-text a:hover {
+  color: var(--accent);
+}
+
+/* El Formulario Derecho */
+.contact-form {
+  padding: 35px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: none;
+  background: var(--bg);
+  color: var(--text);
+  resize: vertical;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* Estados de Validación Interactivos (Llamados desde JavaScript) */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+.form-group.valid input,
+.form-group.valid textarea {
+  border-color: #718b7a; /* Verde si está correcto */
+}
+
+.form-group.invalid input,
+.form-group.invalid textarea {
+  border-color: #9b6464; /* Rojo si hay error */
+}
+
+.error-message {
+  display: block;
+  min-height: 18px;
+  margin-top: 6px;
+  color: #c88989;
+  font-size: 0.75rem;
+}
+
+/* Botón Rosado Integrado con tus Variables */
+.submit-btn {
+  width: auto;
+  border: none;
+  background-color: var(--accent); /* Usa tu rosa brillante */
+  color: #ffffff;
+  padding: 14px 35px;
+  border-radius: 100px; /* Redondeado idéntico a tus botones .btn */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-dark); /* Cambia al rosa oscuro al pasar el mouse */
+  transform: translateY(-3px);
+}
+
+.form-status {
+  min-height: 22px;
+  margin-top: 15px;
+  text-align: center;
+  color: var(--accent-light);
+  font-size: 0.85rem;
+}
 
 /* =========================
    FOOTER
